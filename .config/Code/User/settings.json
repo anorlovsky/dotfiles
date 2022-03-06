@@ -26,7 +26,6 @@
     // "editor.lineHeight": 22,
     // editor settings
     "editor.formatOnSave": true,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.acceptSuggestionOnEnter": "smart", // consider disabling it ("off")
     "editor.unicodeHighlight.ambiguousCharacters": false,
     // terminal settings
