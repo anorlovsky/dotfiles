@@ -1,0 +1,32 @@
+// TODO: add `python -X dev` for asyncio debugging mode (e.g. helpful stack trace on "coroutine not awaited")
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            // TODO: use vscode variable for the project folder name (assuming src code folder is named the same)
+            "args": [
+                "app.main:app",
+                "--port=8000",
+                "--ws=websockets",
+                "--reload",
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
+            }
+        }
+    ]
+}

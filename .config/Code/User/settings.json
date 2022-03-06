@@ -1,0 +1,46 @@
+{
+    // unclutter visual space
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": false,
+    "window.menuBarVisibility": "toggle",
+    "editor.cursorBlinking": "solid",
+    // toggling sidebar won't disrupt the code placement on screen
+    "workbench.sideBar.location": "right",
+    // titlebar 
+    "window.title": "${rootName}",
+    "window.titleBarStyle": "native",
+    // git
+    "git.autofetch": true,
+    "git.closeDiffOnOperation": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    // python
+    "python.defaultInterpreterPath": "/home/arthur/tools/python-venv/bin/python",
+    "python.formatting.provider": "black",
+    // Eye comfort
+    "workbench.colorTheme": "Better Solarized Light",
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 1,
+    "editor.mouseWheelZoom": true,
+    // "editor.letterSpacing": 0.2,
+    // "editor.lineHeight": 22,
+    // editor settings
+    "editor.formatOnSave": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.acceptSuggestionOnEnter": "smart", // consider disabling it ("off")
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    // terminal settings
+    "terminal.integrated.cwd": "${workspaceRoot}",
+    // code navigation
+    "explorer.sortOrder": "type",
+    "breadcrumbs.enabled": true,
+    // posix compatibiliy
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": false,
+    // ...
+    "testing.automaticallyOpenPeekView": "failureAnywhere",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "redhat.telemetry.enabled": true,
+    "nginx-conf-hint.syntax": "sublime",
+}

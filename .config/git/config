@@ -1,0 +1,9 @@
+[user]
+	name = Arthur Orlovsky
+	email = orlovsky.arthur@gmail.com
+[core]
+	editor = micro
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache

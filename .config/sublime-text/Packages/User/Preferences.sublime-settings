@@ -1,0 +1,35 @@
+{
+	// make sure things get saved regularly
+	"save_on_focus_lost": true,
+
+	// I want to always boot into a clean, fresh environment
+	"hot_exit": false,
+	"remember_open_files": false,
+
+	"open_files_in_new_window": "always",
+	"close_windows_when_empty": true,
+
+	// completion options only get in the way of my sublime usage
+	"tab_completion": false,
+	"auto_complete": false,
+
+	"gutter": false,
+	// "mini_diff": false, // use when "gutter" is set to true
+
+	"ensure_newline_at_eof_on_save": true,
+	"translate_tabs_to_spaces": true,
+
+	// I mostly just disable the sidebar, but sometimes it's useful
+	// "show_sidebar_button": false,
+	// "show_indentation": false,
+	// "show_syntax": false,
+
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage",
+	],
+	"theme": "Solarized Flat Light.sublime-theme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).sublime-color-scheme",
+}
