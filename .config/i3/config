@@ -6,6 +6,7 @@ set $browser firefox
 #####################################
 
 
+bindsym Print exec flameshot gui
 bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $browser
 bindsym $mod+Shift+T exec telegram-desktop
@@ -30,7 +31,7 @@ default_floating_border pixel 1
 
 
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id unclutter
+exec_always --no-startup-id unclutter
 
 # window focus with mouse
 #focus_follows_mouse no
@@ -38,7 +39,7 @@ exec --no-startup-id unclutter
 
 ##### Startup ####################################################################
 
-exec --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
+exec_always --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
 
 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
@@ -73,41 +74,44 @@ assign [class="TelegramDesktop"] $ws10
 for_window[class="."] focus
 
 
+# bar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # bar {
-    # output            LVDS1
-    # status_command    i3status
-    # position          top
-    # mode              hide
-    # workspace_buttons yes
-    # tray_output       none
-    # 
-    # #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# 
-    # colors {
-        # background #000000
-        # statusline #ffffff
-# 
-        # focused_workspace  #ffffff #285577
-        # active_workspace   #ffffff #333333
-        # inactive_workspace #888888 #222222
-        # urgent_workspace   #ffffff #900000
-    # }
+#     output            LVDS1
+#     status_command    i3status
+#     position          top
+#     mode              hide
+#     workspace_buttons yes
+#     tray_output       none
+    
+#     #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+
+#     colors {
+#         background #000000
+#         statusline #ffffff
+
+#         focused_workspace  #ffffff #285577
+#         active_workspace   #ffffff #333333
+#         inactive_workspace #888888 #222222
+#         urgent_workspace   #ffffff #900000
+#     }
 # }
 
-bar {
-        # status_command i3status
-        tray_output none
-        strip_workspace_numbers yes
+# bar {
+#         status_command i3status
+#         tray_output none
+#         strip_workspace_numbers yes
 
-        colors {
-        	background #3A3B3C
-        	# statusline #ffffff
-        }
-}
+#         colors {
+#         	background #3A3B3C
+#         	# statusline #ffffff
+#         }
+# }
 
 ###############################################################################
 
-# NOTE(arthur): some defaults from i3 config
+# some i3 config defaults
 
 
 # use these keys for focus, movement, and resize directions when reaching for
@@ -119,8 +123,6 @@ set $right semicolon
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -1,4 +1,9 @@
-# TO-DO
+## Priority
+- use icons for workspace names, hide the solid empty space in the middle of the bar
+	- e.g.: https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshots/screenshot-dunst.png
+
+
+https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshots/screenshot-dunst.png
 
 ## General computing
 - text mail client (neomutt?)
