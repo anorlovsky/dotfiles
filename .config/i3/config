@@ -5,7 +5,6 @@ set $browser firefox
 
 #####################################
 
-
 bindsym Print exec flameshot gui
 bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $browser
@@ -17,13 +16,7 @@ bindsym $mod+Ctrl+Left workspace prev
 
 bindsym $mod+m bar mode toggle
 
-
 font pango:monospace 8
-
-# i3-gaps
-#smart_gaps on
-#gaps inner 10
-#gaps outer 10
 
 # remove titlebars
 default_border pixel 1
@@ -44,8 +37,9 @@ exec_always --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift
-exec --no-startup-id subl -n ~/work/wishlist.md
-exec --no-startup-id subl -n ~/work/journals/journal_01.md
+
+exec_always --no-startup-id subl -n ~/craft/work-journal.md
+exec_always --no-startup-id subl -n ~/craft/wishlist.md
 
 
 ###### Workspaces ################################################################
@@ -70,44 +64,12 @@ assign [class="Sublime_text"] $ws9
 assign [class="TelegramDesktop"] $ws10
 
 
-# when you open the window - always focus on it
+# autofocus on new windows
 for_window[class="."] focus
 
 
-# bar
+# polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-# bar {
-#     output            LVDS1
-#     status_command    i3status
-#     position          top
-#     mode              hide
-#     workspace_buttons yes
-#     tray_output       none
-    
-#     #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-
-#     colors {
-#         background #000000
-#         statusline #ffffff
-
-#         focused_workspace  #ffffff #285577
-#         active_workspace   #ffffff #333333
-#         inactive_workspace #888888 #222222
-#         urgent_workspace   #ffffff #900000
-#     }
-# }
-
-# bar {
-#         status_command i3status
-#         tray_output none
-#         strip_workspace_numbers yes
-
-#         colors {
-#         	background #3A3B3C
-#         	# statusline #ffffff
-#         }
-# }
 
 ###############################################################################
 
