@@ -4,6 +4,8 @@
 [[ $- != *i* ]] && return
 
 
+alias poweroff=~/.local/bin/poweroff.sh
+
 alias ssh="TERM=xterm-256color ssh"
 
 PS1='[\W] '
@@ -11,7 +13,6 @@ PS1='[\W] '
 VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/tools/python-venv/bin/activate
 
-alias fs='flameshot gui'
 alias subl='subl -n'
 
 # TODO: make ~/projects as base dir? (at least for ano_report)
@@ -31,9 +32,6 @@ alias l='ls -l -a'
 export LESS='--quit-if-one-screen --ignore-case --status-column --LONG-PROMPT --RAW-CONTROL-CHARS --HILITE-UNREAD --tabs=4 --no-init --window=-4'
 
 alias ed='micro'
-
-# greeting
-echo $(date +"%H:%M (%A, %B %d)")
 
 
 # enable programmable completion features (you don't need to enable
