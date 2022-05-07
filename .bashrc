@@ -3,9 +3,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
-alias poweroff=~/.local/bin/poweroff.sh
-
 alias ssh="TERM=xterm-256color ssh"
 
 PS1='[\W] '
