@@ -10,8 +10,6 @@ PS1='[\W] '
 VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/tools/python-venv/bin/activate
 
-alias subl='subl -n'
-
 # TODO: make ~/projects as base dir? (at least for ano_report)
 alias uncommited='find . -name .git -type d -execdir git status -s \;'
 alias unpushed='find . -name .git -type d -execdir git log @{u}.. \;'
@@ -29,7 +27,6 @@ alias l='ls -l -a'
 export LESS='--quit-if-one-screen --ignore-case --status-column --LONG-PROMPT --RAW-CONTROL-CHARS --HILITE-UNREAD --tabs=4 --no-init --window=-4'
 
 alias ed='micro'
-
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
