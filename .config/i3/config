@@ -6,6 +6,7 @@ set $browser firefox
 #####################################
 
 bindsym Print exec flameshot gui
+bindsym Shift+Print exec peek --no-headerbar
 bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+Return exec $browser
 bindsym $mod+Shift+T exec telegram-desktop
