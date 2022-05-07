@@ -3,20 +3,25 @@ The plan is to automate their installation as part of setting up a fresh Arch.
 
 # General computing
 firefox 97.0.2-1
+chromium
 xreader 3.2.2-1ar - pdf reader
 redshift 1.12-5
 libreoffice-still 7.2.5-5
 nnn 4.4-1
 thunar 4.16.10-1
+dunst - desktop notification's server (also provides dunstify - a replacement for notify-send)
+remind - a plaintext reminder tool (has GUI wrapper, you can easily pair it with desktop notification utility)
 
 
 # Utils
 fzf 0.29.0-1
 unrar 1:6.1.6-1
-flameshot 11.0.0-4
+flameshot 11.0.0-4 - screenshots
+peek - screen capture
 htop 3.1.2-1
 neofetch 7.1.0-2
 wget 1.21.2-1
+ncdu - great disk space analyzer tool
 
 # Social
 qtox 1.17.4-2
@@ -25,7 +30,7 @@ telegram-desktop 3.5.2-1
 
 # Development
 sublime-text 
-micro 2.0.10-2 - probably going to stop using it, it's kinda buggy and rought around the edges
+micro 2.0.10-2 - probably going to stop using it, it's kinda buggy and rough around the edges
 nano 6.2-1
 
 dbeaver 21.3.4-1
@@ -43,6 +48,7 @@ these things should be run under docker:
 # Terminal stuff
 alacritty 0.10.1-1 - swap for suckless st or something?
 nushell 0.44.0-1
+exa - modern ls replacement
 
 
 
