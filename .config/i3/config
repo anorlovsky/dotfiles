@@ -2,7 +2,6 @@ set $mod Mod4
 set $terminal alacritty
 set $browser firefox
 
-
 #####################################
 
 bindsym Print exec flameshot gui
@@ -23,25 +22,11 @@ font pango:monospace 8
 default_border pixel 1
 default_floating_border pixel 1
 
-
 exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id unclutter
 
 # window focus with mouse
 #focus_follows_mouse no
-
-
-##### Startup ####################################################################
-
-exec_always --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
-
-
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id redshift
-
-exec_always --no-startup-id subl -n ~/craft/work-journal.md
-exec_always --no-startup-id subl -n ~/craft/wishlist.md
-
 
 ###### Workspaces ################################################################
 set $ws1 1:api
@@ -55,22 +40,29 @@ set $ws8 $ws4
 set $ws9 9:notes
 set $ws10 10:soc
 
-
 assign [class="Insomnia"] $ws1
 assign [class="Code"] $ws2
 assign [class="firefox"] $ws3
 assign [class="Alacritty"] $ws4
 assign [class="DBeaver"] $ws5
-assign [class="Sublime_text"] $ws9
+assign [class="Mousepad"] $ws9
 assign [class="TelegramDesktop"] $ws10
-
 
 # autofocus on new windows
 for_window[class="."] focus
 
+##### Startup ####################################################################
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+exec_always --no-startup-id setxkbmap -layout us,ru -option grp:alt_shift_toggle
+
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+exec --no-startup-id redshift
+
+exec_always --no-startup-id mousepad --opening-mode="window" ~/craft/work-journal.md --line=-1
+exec_always --no-startup-id mousepad --opening-mode="window" ~/craft/wishlist.md --line=-1
 
 ###############################################################################
 

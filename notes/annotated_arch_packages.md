@@ -2,6 +2,7 @@ This is an annotated list of essential pacman packages I explicitly installed on
 The plan is to automate their installation as part of setting up a fresh Arch.
 
 # General computing
+mousepad - text editor
 firefox
 chromium
 xreader - pdf reader
@@ -29,7 +30,6 @@ telegram-desktop
 
 
 # Development
-sublime-text
 micro  - probably going to stop using it, it's kinda buggy and rough around the edges
 nano 
 
