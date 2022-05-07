@@ -1,26 +1,38 @@
-Extensions:
+## Installation
+`code --install-extension <ext-id | path>`
+
+## Extensions
 
 ```
+redhat.ansible
+redhat.vscode-yaml
 
-ext install redhat.ansible
-ext install redhat.vscode-yaml
-
-ext install bungcip.better-toml
-ext install mikestead.dotenv
+bungcip.better-toml
+mikestead.dotenv
 
 
-ext install hangxingliu.vscode-nginx-conf-hint
-ext install coolbear.systemd-unit-file
+hangxingliu.vscode-nginx-conf-hint
+coolbear.systemd-unit-file
 
-ext install ms-python.python
-ext install ms-python.vscode-pylance
+ms-python.python
+ms-python.vscode-pylance
 
-ext install ms-azuretools.vscode-docker
-ext install ms-vscode-remote.remote-containers
+ms-azuretools.vscode-docker
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 
-ext install Gruntfuggly.todo-tree
+Gruntfuggly.todo-tree
 
-ext install ginfuru.ginfuru-better-solarized-dark-theme
+ginfuru.ginfuru-better-solarized-dark-theme
+ryanolsonx.solarized
+
+mrorz.language-gettext
+
+ryuta46.multi-command
+dbankier.vscode-quick-select
+
+eamodio.gitlens
 ```
 
 
