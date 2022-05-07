@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+x",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "extension.selectDoubleQuote",
+                "editor.action.smartSelect.grow",
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": {
+                        "snippet": "_(${TM_SELECTED_TEXT})"
+                    }
+                }
+            ]
+        }
+    }
+]
