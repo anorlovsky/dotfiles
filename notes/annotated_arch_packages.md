@@ -1,6 +1,8 @@
 This is an annotated list of essential pacman packages I explicitly installed on my workstation (as of 06.03.22)
 The plan is to automate their installation as part of setting up a fresh Arch.
 
+List packages with `pacman -Qent`
+
 # General computing
 mousepad - text editor
 firefox
@@ -12,6 +14,7 @@ nnn
 thunar
 dunst - desktop notification's server (also provides dunstify - a replacement for notify-send)
 remind - a plaintext reminder tool (has GUI wrapper, you can easily pair it with desktop notification utility)
+obsidian
 
 
 # Utils
@@ -25,7 +28,6 @@ wget
 ncdu - great disk space analyzer tool
 
 # Social
-qtox
 telegram-desktop
 
 
@@ -84,6 +86,9 @@ nvidia-dkms
 ## Fonts
 ttf-hack 
 
+## Passwords
+gnome-keyring
+libsecret
 
 ---
 
@@ -97,9 +102,8 @@ gtk-theme-numix-solarized - TODO: how do I apply that thing?
 insomnia-bin
 visual-studio-code-bin
 zeal - offline docs browser (for python, RFC, etc.)
-
+rate-mirrors-bin - update pacman mirrors based on optimal download speed
 
 # Not sure if I need that
 pinta  - a drawing program like MS paint
-obsidian
 
