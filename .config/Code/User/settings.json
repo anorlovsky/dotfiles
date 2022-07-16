@@ -1,12 +1,8 @@
 {
-    // unclutter visual space
-    "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
     "editor.guides.indentation": false,
     "window.menuBarVisibility": "toggle",
     "editor.cursorBlinking": "solid",
-    // toggling sidebar won't disrupt the code placement on screen
-    "workbench.sideBar.location": "right",
     // titlebar 
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
@@ -14,14 +10,20 @@
     "git.autofetch": true,
     "git.closeDiffOnOperation": true,
     "diffEditor.ignoreTrimWhitespace": false,
+    "git.mergeEditor": true, // NOTE(june 2022): will be enabled by default in future releases 
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.keymap": "alternate",
     // python
     "python.defaultInterpreterPath": "/home/arthur/tools/python-venv/bin/python",
     "python.formatting.provider": "black",
     // Eye comfort
     "workbench.colorTheme": "Better Solarized Light",
     "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "window.zoomLevel": 1,
     "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 2,
     // "editor.letterSpacing": 0.2,
     // "editor.lineHeight": 22,
     // editor settings
@@ -42,4 +44,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "redhat.telemetry.enabled": true,
     "nginx-conf-hint.syntax": "sublime",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
 }
