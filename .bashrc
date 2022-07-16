@@ -10,15 +10,22 @@ PS1='[\W] '
 VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/tools/python-venv/bin/activate
 
-# TODO: make ~/projects as base dir? (at least for ano_report)
-alias uncommited='find . -name .git -type d -execdir git status -s \;'
-alias unpushed='find . -name .git -type d -execdir git log @{u}.. \;'
-alias ano_report='uncommited; echo -e "\n"; unpushed'
+# source: https://github.com/westandskif/rate-mirrors#example-of-everyday-use-on-arch-linux
+alias ano_drop_caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
+alias ano_update_system='export TMPFILE="$(mktemp)"; \
+    sudo true; \
+    rate-mirrors --save=$TMPFILE arch --max-delay=21600 \
+      && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
+      && sudo mv $TMPFILE /etc/pacman.d/mirrorlist \
+      && ano_drop_caches \
+      && yay -Syyu --noconfirm'
+
 
 alias ano_push='git add .; git commit -a -m "<generic commit message>"; git push'
 
 alias gs='git status'
 
+# TODO: alias ls to exa https://github.com/ogham/exa
 alias ls='ls -F -h --color=always -v --author --time-style=long-iso'
 alias la='ls -a'
 alias ll='ls -l'
